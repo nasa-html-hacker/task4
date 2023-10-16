@@ -1,7 +1,7 @@
 class Student:
     university = "SkillWill"
 
-    def __init__(self, name, grade, age):
+    def __init__(self, name: str, grade: int, age: int):
         self.name = name
         self.grade = grade
         self.age = age
@@ -15,7 +15,9 @@ class Student:
 
     def increase_grade(self, increase_by):
         self.grade += increase_by
+        
 stu = Student("Nick", 70, 10)
 print(stu.is_passing)
+
 stu.increase_grade(10)
 print(stu.grade)
