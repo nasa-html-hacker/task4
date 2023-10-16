@@ -7,7 +7,7 @@ class Student:
         self.age = age
 
     def __str__(self):
-        return f"Name: {self.name}, Age: {self.age}, Grade: {self.grade}"
+        return f"Name: {self.name}, Grade: {self.grade},Age: {self.age}"
 
     @property
     def is_passing(self):
@@ -16,7 +16,7 @@ class Student:
     def increase_grade(self, increase_by):
         self.grade += increase_by
         
-stu = Student("Nick", 70, 10)
+stu = Student("Nick", 70, 19)
 
 print(stu.university)
 
