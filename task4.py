@@ -17,7 +17,11 @@ class Student:
         self.grade += increase_by
         
 stu = Student("Nick", 70, 10)
+
+print(stu.university)
+
 print(stu.is_passing)
 
 stu.increase_grade(10)
+
 print(stu.grade)
